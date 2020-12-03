@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="40.922684">
+<testcase classname="" name="FreeCRM Test Title" time="10.357922">
+<system-out><![CDATA[Given user is already on search page........................................passed
+When user enters "Automation Tester" and "London"and "up to 15miles"........passed
+And user clicks on search button............................................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="" name="FreeCRM Test Title 2" time="10.512661">
+<system-out><![CDATA[Given user is already on search page........................................passed
+When user enters "Automation Engineer" and "London"and "up to 1 mile".......passed
+And user clicks on search button............................................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="" name="FreeCRM Test Title 3" time="10.449091">
+<system-out><![CDATA[Given user is already on search page........................................passed
+When user enters "Receptionist" and "Lothian"and "up to 1 mile".............passed
+And user clicks on search button............................................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="" name="FreeCRM Test Title 4" time="9.60301">
+<system-out><![CDATA[Given user is already on search page........................................passed
+When user enters "Java Developer" and "London"and "up to 10 mile"...........passed
+And user clicks on search button............................................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
