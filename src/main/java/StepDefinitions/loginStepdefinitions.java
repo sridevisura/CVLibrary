@@ -58,7 +58,7 @@ public class loginStepdefinitions {
     @Then("^user is navigated to search results and close the browser$")
     public void close_the_browser()
     {
-        System.out.println("user is navigated to search results");
+        System.out.println("User is navigated to Search results");
         driver.quit();
     }
 
