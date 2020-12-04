@@ -15,18 +15,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class loginStepdefinitions {
 
     public WebDriver driver;
-    @Given("^user is already on search page$")
-    public void user_already_on_login_page() {
+    @Given("^browser is open $")
+    public void browser_is_open()
+    {
+        System.out.println("browser  is open");
+    }
+    
+    @And("^user is on cvlibrary page$")
+    public void user_is_on_cvlibrary_page() {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\lasya\\Desktop\\SeleniumDemo1\\src\\main\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.cv-library.co.uk/");
     }
-  /*  @When("^title of login Job Search - Find 175,000 UK jobs on CV-Library")
-    public void title_of_login_page_is_free_CRM() {
-        String title = driver.getTitle();
-        System.out.println(title);
-        Assert.assertEquals(title,  "Job Search - Find 175,000 UK jobs on CV-Library");
-    }*/
+  
  @When("^user enters \"([^\"]*)\" and \"([^\"]*)\"and \"([^\"]*)\"$")
   public void user_enters_and_Vipullasya(String keywords, String location,String distance) throws Throwable {
       // Write code here that turns the phrase above into concrete actions
@@ -44,9 +45,10 @@ public class loginStepdefinitions {
         Thread.sleep(3000);
     }
 
-    @Then("^close the browser$")
+    @Then("^user is navigated to search results and close the browser$")
     public void close_the_browser()
     {
+         System.out.println("user is navigated to search results");
         driver.quit();
     }
 
