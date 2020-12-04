@@ -16,14 +16,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
-public class loginStepdefinitions {
+public class LoginStepDefinitions {
 
     public WebDriver driver;
     @Given("^browser is open$")
     public void browser_is_open() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         System.out.println("broser is open");
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\lasya\\Desktop\\SeleniumDemo1\\src\\main\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "..\\src\\main\\resources\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
