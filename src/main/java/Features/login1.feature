@@ -1,10 +1,11 @@
 Feature: Search Functionality
 
   Scenario Outline:Validating search functionality is working
-  Given user is already on search page
+  Given browser is open
+  And user is on cvlibrary page
   When user enters "<keywords>" and "<location>"and "<distance>"
   And user clicks on search button
-  Then close the browser
+  Then user is navigated to search results and close the browser
   Examples:
     | keywords | location |distance|
     | Automation Tester | London|up to 15miles|
