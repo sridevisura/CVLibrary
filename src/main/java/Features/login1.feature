@@ -1,6 +1,6 @@
-Feature:
+Feature: Search Functionality
 
-  Scenario Outline:FreeCRM Test Title
+  Scenario Outline:Validating search functionality is working
   Given user is already on search page
   When user enters "<keywords>" and "<location>"and "<distance>"
   And user clicks on search button
