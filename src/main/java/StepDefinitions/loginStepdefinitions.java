@@ -39,7 +39,7 @@ public class loginStepdefinitions {
     }
 
     @When("^user enters \"([^\"]*)\" and \"([^\"]*)\"and \"([^\"]*)\"$")
-    public void user_enters_and_Vipullasya(String keywords, String location,String distance) throws Throwable {
+    public void user_enters_userinput(String keywords, String location,String distance) throws Throwable {
        
         driver.findElement(By.id("keywords")).sendKeys(keywords);
         driver.findElement(By.id("location")).sendKeys(location);
